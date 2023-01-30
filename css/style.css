@@ -69,6 +69,18 @@ hr {
     height: 105%;
     background-attachment: fixed;
 }
+#nosotros{
+  background-image: url(../assets/imgs/Bg-Nosotros-Interior.jpg);
+  margin: 0;
+  padding: 50px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  width: 100%;
+  height: 105%;
+  background-attachment: fixed;
+}
 footer.info{
     background-color: aqua;
 }
@@ -82,7 +94,7 @@ a.whatsapp{
     color: #ffdd00;
 }
 a.whatsapp:hover{
-    color: #fff6bb;
+    color: #10c306;
 }
 nav ul li a.actives{
     color: #ffdd00;
@@ -253,4 +265,9 @@ ul li a.nav-link:hover{
 .image-aboutus-para {
     color:#fff;
 }
-
+h3{
+  color: #3e3e3e;
+}
+.footerBarra{
+  width: 100%;
+}
