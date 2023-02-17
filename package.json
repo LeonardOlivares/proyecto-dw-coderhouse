@@ -1,0 +1,25 @@
+{
+  "name": "00_pre-entrega2-leonardo-olivares",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonardOlivares/proyecto-dw-coderhouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeonardOlivares/proyecto-dw-coderhouse/issues"
+  },
+  "homepage": "https://github.com/LeonardOlivares/proyecto-dw-coderhouse#readme",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
