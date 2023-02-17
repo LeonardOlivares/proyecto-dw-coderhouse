@@ -1,0 +1,186 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+.titularesHome {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-justify: auto; }
+
+.pymesText {
+  margin-top: 100px; }
+
+.nosotrosHome {
+  margin-top: 50px; }
+
+.tituloNosotrosHome h2 {
+  color: #323232;
+  font-weight: 800;
+  font-size: 45px; }
+
+.caption p {
+  color: #282828;
+  font-weight: 400;
+  font-size: 16px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0 50px; }
+
+.imgNosotrosHome img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+
+hr {
+  width: 30%;
+  justify-content: center;
+  margin: 30px auto;
+  align-items: center;
+  text-align: center; }
+
+#nosotrosHome {
+  background-image: url(../assets/imgs/Bg-NosotrosHome.jpg);
+  margin: 0;
+  padding: 50px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  width: 100%;
+  height: 105%;
+  background-attachment: fixed; }
+
+a.whatsapp {
+  color: #ffdd00; }
+
+a.whatsapp:hover {
+  color: #10c306; }
+
+nav ul li a.actives {
+  color: #ffdd00; }
+
+ul li a.nav-link:hover {
+  color: #ffdd00; }
+
+.whatsapp {
+  margin-right: 30px; }
+
+.navbar-brand {
+  margin: 5px 30px; }
+
+/* Comienza Estilo de Página Nosotros */
+#nosotros {
+  background-image: url(../assets/imgs/Bg-Nosotros-Interior.jpg);
+  margin: 0;
+  padding: 50px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  width: 100%;
+  height: 105%;
+  background-attachment: fixed; }
+
+.tituloNosotrosHome h3 {
+  margin-top: 30px;
+  color: #323232;
+  font-weight: 800;
+  font-size: 25px; }
+
+.cta-padding35 {
+  margin: 10px 0;
+  padding: 35px 0 35px;
+  background-color: #fd5;
+  color: #fff; }
+
+.cta-sektion .cta-padding35 .text-CTA-section {
+  color: #3e3e3e; }
+
+.site-heading h3 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-weight: 600; }
+
+.border {
+  background: #e1e1e1;
+  height: 1px;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px; }
+
+.paddingPageNosotros {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.image-aboutus-banner {
+  background: linear-gradient(rgba(30, 24, 1, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.pexels.com/photos/673649/pexels-photo-673649.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  padding-top: 110px;
+  padding-bottom: 110px; }
+
+.image-aboutus-sm-banner {
+  background: linear-gradient(rgba(30, 24, 1, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.pexels.com/photos/631008/pexels-photo-631008.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.lg-text {
+  font-size: 52px;
+  font-weight: 600;
+  text-transform: none;
+  color: #fff; }
+
+.image-aboutus-para {
+  color: #fff; }
+
+h3 {
+  color: #3e3e3e; }
+
+.footerBarra {
+  width: 100%; }
+
+.tracking-in-contract-bck {
+  -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+
+/*
+ * ----------------------------------------
+ * animation tracking-in-contract-bck
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+    transform: translateZ(400px);
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+    transform: translateZ(400px);
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
