@@ -109,7 +109,7 @@ ul li a.nav-link:hover{
     }}
   }
   .siguenosText{
-    margin-top: 100px;
+    
     color: rgb(50, 50, 50);
     font-weight: 600;
     font-size: $size-secundarios;
@@ -230,6 +230,236 @@ h3{
     }
 }
 
+/* Inicio código Servicios */
+#servicios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 100px;
+    background-image: url(../assets/imgs/Bg-Nosotros-Interior.jpg);
+    margin: 0;
+    padding: 50px 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    height: 105%;
+    background-attachment: fixed;
+    z-index: 0;
+}
+.card_me{
+    position: relative;
+    display: flex;
+    width: 300px;
+    height: 350px;
+    flex-wrap: wrap;
+    margin: 20px;
+
+    &:hover .front{
+        transform: perspective(600px) rotateY(180deg);
+    }
+    &:hover .back{
+        transform: perspective(600px) rotateY(360deg);
+    }
+    .face{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        overflow: hidden;
+        transition: .5s;
+    }
+    .front{
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000; 
+        border-radius: 20px;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        h3{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            color: #fff;
+            background: rgba($color: #000000, $alpha: 0.4);
+            text-align: center;
+        }
+    }
+    
+    
+    .back{
+        transform: perspective(600px) rotateY(180deg);
+        background: #2d2d2d;
+        border-radius: 20px;
+        padding: 15px;
+        color: #e1e1e1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0 5px 10px $colorSecundario;
+        h3{
+            font-size: 30px;
+            margin-top: 20px;
+            letter-spacing: 2px;
+            color: #f3f3f3;
+        }
+        .link{
+            border-top: solid 1px #f3f3f3;
+            height: 50px;
+            line-height: 50px;
+            a{
+                color:#f3f3f3;
+                text-decoration: none;
+            }
+        }
+        
+    }
+}
+
+/*Página de contacto*/
+.form-control {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    background: none; 
+    &:active, &:focus {
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-color: #000; }}
+    
+  
+  .col-form-label {
+    color: #000;
+    font-size: 13px; }
+  
+  .btnp, .form-control, .custom-select {
+    height: 45px;
+    border-radius: 0; }
+  
+  .custom-select {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    &:active, &:focus {
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-color: #000; }}
+    
+  
+        .btnp.btn-primary {
+            border-radius: 30px;
+            background: #ffdd00 !important;
+            color: $colorSecundario;
+            -webkit-box-shadow: 0 15px 30px 0 rgba(239, 67, 57, 0.2);
+            box-shadow: 0 15px 30px 0 rgba(239, 67, 57, 0.2); }
+    .btnp{
+    border: none;
+    border-radius: 0;
+    font-size: 11px;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    border-radius: 30px !important; 
+    &:hover {
+        color: #fff; }
+      &:active, &:focus {
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+    }
+    
+    
+  
+  .contact-wrap {
+    -webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #efefef; 
+    .col-form-label {
+        font-size: 14px;
+        color: #b3b3b3;
+        margin: 0 0 10px 0;
+        display: inline-block;
+        padding: 0; }
+        .form, .contact-wrap .contact-info {
+            padding: 40px; }
+            .contact-info {
+                color: rgba(255, 255, 255, 0.5); }
+                .contact-info ul li {
+                    margin-bottom: 15px;
+                    color: rgba(255, 255, 255, 0.5); }
+                    .contact-info ul li .wrap-icon {
+                        font-size: 20px;
+                        color: #fff;
+                        margin-top: 5px; }
+                        .form {
+                            background: #fff; }
+                            .form h3 {
+                                color: #000;
+                                font-size: 2rem;
+                                font-weight: 700;
+                                margin-bottom: 30px; }
+                                .contact-info {
+                                    height: 100vh;
+                                    background-size: cover;
+                                    background-position: center center;
+                                    background-repeat: no-repeat; }
+                                    .contact-info a {
+                                        position: absolute;
+                                        top: 0;
+                                        bottom: 0;
+                                        left: 0;
+                                        right: 0; }
+        }
+
+      @media (max-width: 1199.98px) {
+        .contact-wrap .contact-info {
+          height: 400px !important; } }
+      .contact-wrap .contact-info h3 {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 30px; }
+  
+  label.error {
+    font-size: 12px;
+    color: red; }
+  
+  #message {
+    resize: vertical; }
+  
+  #form-message-warning, #form-message-success {
+    display: none; }
+  
+  #form-message-warning {
+    color: #B90B0B; }
+  
+  #form-message-success {
+    color: #55A44E;
+    font-size: 18px;
+    font-weight: bold; }
+  
+  .submitting {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000; }
+
+  
 
 
 @import "estructuras";
